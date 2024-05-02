@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 700;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  line-height: 1.5;
+
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.modal h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.modal p {
+  margin: 0 20px;
+  font-family: sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+header {
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  border-bottom: solid 3px #fff;
+  position: relative;
+}
+
+.open-modal,
+.again {
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 0;
+  right: 10%;
+  transform: translate(50%, 50%); */
+  padding: 20px 40px;
+  text-decoration: none;
+  border: none;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  background-color: #000;
+  color: #444;
+  font-size: 20px;
+}
+
+/* .again {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-family: inherit;
+  color: #444;
+  transform: translate(30%, 30%); 
+} */
+
+.win-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-space {
+  margin: 0 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-title {
+  font-size: 60px;
+}
+
+section {
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(
+    to right,
+    rgb(14, 13, 13),
+    rgb(0, 0, 0, 0.3)
+  );
+  color: #fff;
+}
+
+.number {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  /* background-color: #fff; */
+  color: #444;
+  font-size: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-box {
+  background-color: #fff;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header p {
+  font-size: 32px;
+}
+
+.container-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.guess {
+  height: 100px;
+  width: 200px;
+  box-shadow: 0 15px 30px rgb(153, 150, 150);
+}
+
+.go {
+  cursor: pointer;
+  padding: 20px 40px;
+  background-color: #000;
+  color: #444;
+  border: none;
+  border: solid 1px #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.go:hover,
+.again:hover,
+.open-modal:hover {
+  background-color: #fff;
+  color: #444;
+  border: solid 1px #444;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 0;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transform: translate(-50%, 50%);
+}
+
+.point {
+  height: 40px;
+  font-size: 32px;
+}
+
+.play-point {
+  color: #444;
+}
+.reward {
+  height: 40px;
+  font-size: 32px;
+}
+
+.prize {
+  color: #444;
+}
+
+.win-loose {
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 32px;
+}
+
+input {
+  background-color: #000;
+  color: #444;
+  border: none;
+  border: solid 2px #fff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}

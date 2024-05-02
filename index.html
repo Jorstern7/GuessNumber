@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="guess.css" />
+    <link rel="stylesheet" href="guessquerries.css" />
+    <title>Guessing</title>
+  </head>
+  <body class="body">
+    <header class="win-header">
+      <button class="again btn-space">Play Again</button>
+      <p class="header-title">Start Guessing</p>
+      <a href="#" class="open-modal btn-space">How it works?</a>
+    </header>
+
+    <section class="win-section">
+      <div class="answer-box"><p class="number">?</p></div>
+
+      <div class="container-game">
+        <input class="guess" type="number" />
+        <button class="go">GO</button>
+        <p class="win-loose">Try to Win the Game!</p>
+      </div>
+
+      <div class="score">
+        <p class="point">Score: <span class="play-point">20</span></p>
+        <p class="reward">Highscore: <span class="prize">0</span></p>
+      </div>
+    </section>
+
+    <div class="modal hidden">
+      <button class="close">&times;</button>
+      <h1>How it works</h1>
+      <p>
+        First and foremost, use the 'number' field that is located right below
+        the 'question' box to guess your number. You should guess the right
+        number that is hidden in this 'question' box to win the game. Each and
+        every time you guess the wrong number, your score decreases. Your
+        highscore will be, as the name says, your highest score. In other words,
+        your highscore will be the number from which you guessed the right
+        number that is hidden in the question box. Which means, if your score
+        was 15 when you guessed the right number, your highscore will be 15. And
+        if on the second round of the game your score is 19, your highest score
+        will now be 19. Good Luck!
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="guess.js"></script>
+  </body>
+</html>
